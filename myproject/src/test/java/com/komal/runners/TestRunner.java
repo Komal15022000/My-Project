@@ -4,7 +4,10 @@ import io.cucumber.testng.CucumberOptions;
 
 
 
-@CucumberOptions(features="src/test/resources/features",glue ={"com.komal.stepdefinitions" ,"com.komal.hooks", "com.komal.utils" }, plugin = {"pretty", "html:target/cucumber-report.html"}, monochrome = true )
+@CucumberOptions(features="src/test/resources/features",
+glue ={"com.komal.stepdefinitions" ,"com.komal.hooks", "com.komal.utils" }, 
+plugin = {"pretty", "html:target/cucumber-report.html"}, 
+monochrome = true )
 public class TestRunner extends AbstractTestNGCucumberTests
 {
     
